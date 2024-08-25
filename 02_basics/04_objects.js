@@ -5,7 +5,7 @@ tinderUser.name = "Yuvraj"
 tinderUser.id = "123Abe"
 tinderUser.email = "Yuvi@1907gmail.com"
 tinderUser.location = "jaipur"
-// console.log(tinderUser);
+console.log(tinderUser);
 
 // ######################################################################################
 
@@ -66,6 +66,20 @@ console.log(Object.entries(tinderUser)); // Output->>> it ll return an array con
 console.log(Object.hasOwnProperty("name")); // it ll check that given proprty is exist init or not. 
 
 
+
+// #################################################################################
+
+// Json files and destructuring .
+
+const course = {
+    coursename:"madeJavaScriptEasy",
+    fee:999,
+    courseInstructor:"Yuvraj",
+}
+
+const {courseInstructor:instructor} = course // now we directly access it with help of destructuring.
+                                             // here we replace courseInstructor with instructor.
+console.log(instructor);
 
 
 
