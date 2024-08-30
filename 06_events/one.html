@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="raga">
+    <h1>chai or javascript</h1>
+    <button id="start"></button>
+    <button id="stop"></button>
+</body>
+<script>
+    // here we use use setinterval and clear interval function 
+    // setinterval function execute given piece of instruction after the time given by us.
+    let interValId;
+    document.getElementById("start").addEventListener("click",()=>{
+        const setter = function(str){
+        console.log(str, Date.now())
+    }
+        interValId = setInterval(setter,1000,"hitesh")
+    })
+    document.getElementById("stop").addEventListener("click",()=>{
+        clearInterval(interValId);
+    })
+    clearInterval(interValId);
+</script>
+</html>
